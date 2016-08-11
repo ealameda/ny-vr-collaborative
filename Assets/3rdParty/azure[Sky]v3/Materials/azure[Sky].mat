@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: azure[Sky]
+  m_Shader: {fileID: 4800000, guid: ad81ea53253ab42479481cee9b1a5060, type: 3}
+  m_ShaderKeywords: HDR_OFF
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Cloud1
+      second:
+        m_Texture: {fileID: 2800000, guid: c3cb9e4dc8d290348b8f51a39e68e508, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Cloud2
+      second:
+        m_Texture: {fileID: 2800000, guid: c3cb9e4dc8d290348b8f51a39e68e508, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _CloudTexture
+      second:
+        m_Texture: {fileID: 2800000, guid: bc6ac8dc21570e5448532e79012831c7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _WispyCloudTexture
+      second:
+        m_Texture: {fileID: 2800000, guid: bc6ac8dc21570e5448532e79012831c7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _CloudAlpha
+      second: 1
+    - first:
+        name: _CloudCovarage
+      second: 0.25
+    - first:
+        name: _Covarage
+      second: 0
+    - first:
+        name: _FarColorDistance
+      second: 0.54999995
+    - first:
+        name: _FarColorIntensity
+      second: 0.14375001
+    - first:
+        name: _LerpGraoundSky
+      second: 1
+    - first:
+        name: _LerpNightSky
+      second: 0.5
+    - first:
+        name: _LerpNightSkyDistance
+      second: 0.25
+    - first:
+        name: _ProceduralCloudAltitude
+      second: 50
+    - first:
+        name: _ProceduralCloudDirection
+      second: 0.54
+    - first:
+        name: _ProceduralCloudSpeed
+      second: -4.7470965
+    - first:
+        name: _SkyRotate
+      second: 0
+    - first:
+        name: _SunSize
+      second: 281
+    - first:
+        name: _SundiskIntensity
+      second: 2
+    - first:
+        name: _WispyCloudDirection
+      second: 0
+    - first:
+        name: _WispyCovarage
+      second: 0
+    m_Colors:
+    - first:
+        name: _Bright
+      second: {r: 0.25735292, g: 0.14449346, b: 0.08326123, a: 1}
+    - first:
+        name: _Darkness
+      second: {r: 0.5514706, g: 0.6102433, b: 1, a: 1}
+    - first:
+        name: _GroundCloseColor
+      second: {r: 0, g: 0.039215688, b: 0.16470589, a: 1}
+    - first:
+        name: _GroundFarColor
+      second: {r: 0.11372549, g: 0.19215687, b: 0.43137255, a: 1}
+    - first:
+        name: _PenumbraColor
+      second: {r: 1, g: 0, b: 0, a: 1}
+    - first:
+        name: _SunCol
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _SunColor
+      second: {r: 1, g: 0.09019608, b: 0, a: 1}
+    - first:
+        name: _SunCoronaColor
+      second: {r: 1, g: 0.68529415, b: 0.21323532, a: 1}
+    - first:
+        name: _WispyBright
+      second: {r: 0.15686275, g: 0.08627451, b: 0.047058824, a: 1}
+    - first:
+        name: _WispyColor
+      second: {r: 1, g: 0.83137256, b: 0.7058824, a: 1}
+    - first:
+        name: _WispyDarkness
+      second: {r: 0.5568628, g: 0.6627451, b: 1, a: 1}
