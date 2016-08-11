@@ -3,16 +3,19 @@ using System.Collections;
 
 public class HighFive : MonoBehaviour {
 
-    public ParticleSystem effect;
+    public GameObject effectPrimary;
+    public GameObject effectSecondary;
 
     void OnTriggerEnter(Collider collisionInfo)
     {
         if (collisionInfo.gameObject.name == "palm")
         {
             Debug.Log("palm detected collision with " + collisionInfo.gameObject.name);
-            effect.transform.position = gameObject.transform.position;
-            GameObject instatiatedParticle = Instantiate(effect, effect.transform.position, Quaternion.identity) as GameObject;
-            Destroy(instatiatedParticle,effect.duration);
+            GameObject effectPrimaryInstance = Instantiate(effectPrimary, gameObject.transform.position, Quaternion.identity) as GameObject;
+            GameObject effectSecondaryInstance = Instantiate(effectSecondary, gameObject.transform.position, Quaternion.identity) as GameObject;
+
+            Destroy(effectPrimaryInstance, 2);
+            Destroy(effectSecondaryInstance, 2);
         }
     }
 }
