@@ -76,7 +76,7 @@ public abstract class RemoteHandController : Photon.MonoBehaviour
             pinky.Add(rigidPinky.GetChild(i));
         }
 
-        remotePalm = remoteHand.transform.Find("palm").gameObject;
+        remotePalm = remoteHand.transform.Find("remotePalm").gameObject;
         remoteForearm = remoteHand.transform.Find("forearm").gameObject;
 
         remoteThumb = new List<GameObject>();
