@@ -10,7 +10,8 @@ public class HighFive : Photon.MonoBehaviour
     void OnTriggerEnter(Collider collisionInfo)
     {
         if (collisionInfo.gameObject.name == "remotePalm" &&
-            !collisionInfo.gameObject.GetComponent<PhotonView>().isMine)
+            !collisionInfo.gameObject.GetComponent<PhotonView>().isMine &&
+            photonView.isMine)
         {
             Debug.Log("palm detected collision with " + collisionInfo.gameObject.name);
             GameObject effectPrimaryInstance = Instantiate(effectPrimary, gameObject.transform.position, Quaternion.identity) as GameObject;
