@@ -447,6 +447,7 @@ GameObject:
   - 114: {fileID: 114000012376065136}
   - 114: {fileID: 114000010911495714}
   - 65: {fileID: 65000012351722142}
+  - 54: {fileID: 54000012205953476}
   m_Layer: 0
   m_Name: remotePalm
   m_TagString: hand_bones
@@ -935,6 +936,7 @@ GameObject:
   - 114: {fileID: 114000011300850782}
   - 114: {fileID: 114000010595481502}
   - 65: {fileID: 65000013457029200}
+  - 54: {fileID: 54000010484045944}
   m_Layer: 0
   m_Name: remotePalm
   m_TagString: hand_bones
@@ -5632,6 +5634,36 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011931223554}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54000010484045944
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012330200982}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54000012205953476
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011038413616}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65000012351722142
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -5642,7 +5674,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.000030517578, y: -0.0009765625, z: 0.000015258789}
 --- !u!65 &65000013447550364
 BoxCollider:
@@ -5666,7 +5698,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.000030517578, y: -0.0009765625, z: 0.000015258789}
 --- !u!81 &81000012702139600
 AudioListener:
@@ -5801,8 +5833,8 @@ MonoBehaviour:
   - {fileID: 114000012376065136}
   - {fileID: 114000010911495714}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 21
-  instantiationId: 21
+  viewIdField: 41
+  instantiationId: 41
   isRuntimeInstantiated: 0
 --- !u!114 &114000010150840260
 MonoBehaviour:
@@ -5852,8 +5884,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011933318048}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 34
-  instantiationId: 34
+  viewIdField: 40
+  instantiationId: 40
   isRuntimeInstantiated: 0
 --- !u!114 &114000010282072004
 MonoBehaviour:
@@ -5896,8 +5928,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000010663372114}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 30
-  instantiationId: 30
+  viewIdField: 39
+  instantiationId: 39
   isRuntimeInstantiated: 0
 --- !u!114 &114000010334067266
 MonoBehaviour:
@@ -5921,8 +5953,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000010512658430}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 7
-  instantiationId: 7
+  viewIdField: 38
+  instantiationId: 38
   isRuntimeInstantiated: 0
 --- !u!114 &114000010381511504
 MonoBehaviour:
@@ -5973,8 +6005,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012859926078}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 26
-  instantiationId: 26
+  viewIdField: 37
+  instantiationId: 37
   isRuntimeInstantiated: 0
 --- !u!114 &114000010503816410
 MonoBehaviour:
@@ -5998,8 +6030,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000010750236620}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 16
-  instantiationId: 16
+  viewIdField: 36
+  instantiationId: 36
   isRuntimeInstantiated: 0
 --- !u!114 &114000010512658430
 MonoBehaviour:
@@ -6134,8 +6166,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011686010410}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 9
-  instantiationId: 9
+  viewIdField: 35
+  instantiationId: 35
   isRuntimeInstantiated: 0
 --- !u!114 &114000010704578494
 MonoBehaviour:
@@ -6171,8 +6203,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012416458802}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 27
-  instantiationId: 27
+  viewIdField: 34
+  instantiationId: 34
   isRuntimeInstantiated: 0
 --- !u!114 &114000010748718436
 MonoBehaviour:
@@ -6220,8 +6252,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000010748718436}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 11
-  instantiationId: 11
+  viewIdField: 33
+  instantiationId: 33
   isRuntimeInstantiated: 0
 --- !u!114 &114000010814417042
 MonoBehaviour:
@@ -6294,8 +6326,8 @@ MonoBehaviour:
   - {fileID: 114000010656583190}
   - {fileID: 114000010150840260}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 6
-  instantiationId: 6
+  viewIdField: 32
+  instantiationId: 32
   isRuntimeInstantiated: 0
 --- !u!114 &114000010961491778
 MonoBehaviour:
@@ -6319,8 +6351,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012673287282}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 20
-  instantiationId: 20
+  viewIdField: 31
+  instantiationId: 31
   isRuntimeInstantiated: 0
 --- !u!114 &114000010971942928
 MonoBehaviour:
@@ -6344,8 +6376,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000013703675004}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 40
-  instantiationId: 40
+  viewIdField: 30
+  instantiationId: 30
   isRuntimeInstantiated: 0
 --- !u!114 &114000010981578806
 MonoBehaviour:
@@ -6394,8 +6426,8 @@ MonoBehaviour:
   - {fileID: 114000011300850782}
   - {fileID: 114000010595481502}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 28
-  instantiationId: 28
+  viewIdField: 29
+  instantiationId: 29
   isRuntimeInstantiated: 0
 --- !u!114 &114000011239073690
 MonoBehaviour:
@@ -6448,8 +6480,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011735903962}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 23
-  instantiationId: 23
+  viewIdField: 28
+  instantiationId: 28
   isRuntimeInstantiated: 0
 --- !u!114 &114000011310812662
 MonoBehaviour:
@@ -6521,8 +6553,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012025551990}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 5
-  instantiationId: 5
+  viewIdField: 27
+  instantiationId: 27
   isRuntimeInstantiated: 0
 --- !u!114 &114000011570478710
 MonoBehaviour:
@@ -6632,8 +6664,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012975829220}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 39
-  instantiationId: 39
+  viewIdField: 26
+  instantiationId: 26
   isRuntimeInstantiated: 0
 --- !u!114 &114000011933318048
 MonoBehaviour:
@@ -6729,8 +6761,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011570478710}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 14
-  instantiationId: 14
+  viewIdField: 25
+  instantiationId: 25
   isRuntimeInstantiated: 0
 --- !u!114 &114000012297480366
 MonoBehaviour:
@@ -6778,8 +6810,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000014104192520}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 38
-  instantiationId: 38
+  viewIdField: 24
+  instantiationId: 24
   isRuntimeInstantiated: 0
 --- !u!114 &114000012376065136
 MonoBehaviour:
@@ -6815,8 +6847,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011793855750}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 8
-  instantiationId: 8
+  viewIdField: 23
+  instantiationId: 23
   isRuntimeInstantiated: 0
 --- !u!114 &114000012416458802
 MonoBehaviour:
@@ -6852,8 +6884,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 4000011521029692}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 4
-  instantiationId: 4
+  viewIdField: 22
+  instantiationId: 22
   isRuntimeInstantiated: 0
 --- !u!114 &114000012546905644
 MonoBehaviour:
@@ -6877,8 +6909,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011088893288}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 24
-  instantiationId: 24
+  viewIdField: 21
+  instantiationId: 21
   isRuntimeInstantiated: 0
 --- !u!114 &114000012673287282
 MonoBehaviour:
@@ -6950,8 +6982,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012783875812}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 15
-  instantiationId: 15
+  viewIdField: 20
+  instantiationId: 20
   isRuntimeInstantiated: 0
 --- !u!114 &114000013014404728
 MonoBehaviour:
@@ -6987,8 +7019,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000010981578806}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 35
-  instantiationId: 35
+  viewIdField: 19
+  instantiationId: 19
   isRuntimeInstantiated: 0
 --- !u!114 &114000013058395578
 MonoBehaviour:
@@ -7012,8 +7044,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012203381148}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 19
-  instantiationId: 19
+  viewIdField: 18
+  instantiationId: 18
   isRuntimeInstantiated: 0
 --- !u!114 &114000013080872254
 MonoBehaviour:
@@ -7037,8 +7069,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011643224560}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 12
-  instantiationId: 12
+  viewIdField: 17
+  instantiationId: 17
   isRuntimeInstantiated: 0
 --- !u!114 &114000013139850724
 MonoBehaviour:
@@ -7088,8 +7120,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012297480366}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 25
-  instantiationId: 25
+  viewIdField: 16
+  instantiationId: 16
   isRuntimeInstantiated: 0
 --- !u!114 &114000013279308880
 MonoBehaviour:
@@ -7113,8 +7145,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011839078270}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 41
-  instantiationId: 41
+  viewIdField: 15
+  instantiationId: 15
   isRuntimeInstantiated: 0
 --- !u!114 &114000013372729030
 MonoBehaviour:
@@ -7162,8 +7194,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012330769026}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 32
-  instantiationId: 32
+  viewIdField: 14
+  instantiationId: 14
   isRuntimeInstantiated: 0
 --- !u!114 &114000013638187910
 MonoBehaviour:
@@ -7212,8 +7244,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012076708924}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 33
-  instantiationId: 33
+  viewIdField: 12
+  instantiationId: 12
   isRuntimeInstantiated: 0
 --- !u!114 &114000013663797658
 MonoBehaviour:
@@ -7237,8 +7269,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000013372729030}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 3
-  instantiationId: 3
+  viewIdField: 11
+  instantiationId: 11
   isRuntimeInstantiated: 0
 --- !u!114 &114000013676819666
 MonoBehaviour:
@@ -7262,8 +7294,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000013783556620}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 31
-  instantiationId: 31
+  viewIdField: 10
+  instantiationId: 10
   isRuntimeInstantiated: 0
 --- !u!114 &114000013703675004
 MonoBehaviour:
@@ -7299,8 +7331,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011979695124}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 10
-  instantiationId: 10
+  viewIdField: 9
+  instantiationId: 9
   isRuntimeInstantiated: 0
 --- !u!114 &114000013738339918
 MonoBehaviour:
@@ -7324,8 +7356,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000010704578494}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 18
-  instantiationId: 18
+  viewIdField: 8
+  instantiationId: 8
   isRuntimeInstantiated: 0
 --- !u!114 &114000013783556620
 MonoBehaviour:
@@ -7361,8 +7393,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000012048962736}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 29
-  instantiationId: 29
+  viewIdField: 7
+  instantiationId: 7
   isRuntimeInstantiated: 0
 --- !u!114 &114000013825799588
 MonoBehaviour:
@@ -7413,8 +7445,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011385920270}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 37
-  instantiationId: 37
+  viewIdField: 6
+  instantiationId: 6
   isRuntimeInstantiated: 0
 --- !u!114 &114000013997495194
 MonoBehaviour:
@@ -7438,8 +7470,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000010894733882}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 36
-  instantiationId: 36
+  viewIdField: 5
+  instantiationId: 5
   isRuntimeInstantiated: 0
 --- !u!114 &114000014104192520
 MonoBehaviour:
@@ -7475,8 +7507,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000013014404728}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 22
-  instantiationId: 22
+  viewIdField: 4
+  instantiationId: 4
   isRuntimeInstantiated: 0
 --- !u!114 &114000014162633558
 MonoBehaviour:
@@ -7500,8 +7532,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114000011310812662}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 17
-  instantiationId: 17
+  viewIdField: 3
+  instantiationId: 3
   isRuntimeInstantiated: 0
 --- !u!114 &114000014180223114
 MonoBehaviour:
