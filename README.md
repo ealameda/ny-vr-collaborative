@@ -16,6 +16,7 @@ Baseline functionality for two or more people to collaborate remotely in VR. Try
   - Activate by having all players make and hold a thumbs up gesture.
   - Change the length of the timer in the RoomManager. 
   - Change the start and end time of day in the SkyController.
+* High Five
 
 ##Hardware requirements:
 * Oculus or HTC Vive
