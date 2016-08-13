@@ -5,16 +5,31 @@ public class Eraser : Photon.MonoBehaviour
 {
     public Vector3 posistionOffset;
     private GameObject[] lines;
+    public float eraseDelay;
+    private float countdown;
+    private bool erased;
 
     void OnTriggerEnter(Collider collisionInfo)
     {
+        countdown = eraseDelay;
+        erased = false;
         Debug.Log("i touched an eraser and i liked it");
-        lines = GameObject.FindGameObjectsWithTag("Line");
-        foreach (GameObject line in lines)
+    }
+
+    void OnTriggerStay(Collider collisionInfo)
+    {
+        if (countdown <= 0 && !erased)
         {
-            Destroy(line);
+            Debug.Log("erasing now");
+            lines = GameObject.FindGameObjectsWithTag("Line");
+            foreach (GameObject line in lines)
+            {
+                Destroy(line);
+            }
+            photonView.RPC("EraseRemoteLines", PhotonTargets.OthersBuffered);
+            erased = true;
         }
-        photonView.RPC("EraseRemoteLines", PhotonTargets.OthersBuffered);
+        countdown -= Time.deltaTime;
     }
 
     [PunRPC]
