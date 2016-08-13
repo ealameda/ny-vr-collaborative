@@ -1921,7 +1921,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1320492529}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 223ef0c664158c44cafe5beb1f73375d, type: 3}
   m_Name: 
@@ -3167,6 +3167,10 @@ Prefab:
       propertyPath: ReflectionProbeIntensityCurve.Array.size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
+      propertyPath: SunDirLightIntensityCurve.Array.data[0].m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 418482, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.17282218
@@ -3245,7 +3249,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
       propertyPath: SunDirLightIntensity
-      value: 0.99982995
+      value: 0.39999998
       objectReference: {fileID: 0}
     - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
       propertyPath: MoonDirLightIntensity
@@ -3257,7 +3261,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 10865866, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
       propertyPath: m_Intensity
-      value: 0.99982995
+      value: 0.39999998
       objectReference: {fileID: 0}
     - target: {fileID: 10827476, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
       propertyPath: m_Enabled
@@ -3498,6 +3502,38 @@ Prefab:
     - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
       propertyPath: Turbidity
       value: 3.6249998
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
+      propertyPath: SunDirLightIntensityCurve.Array.data[0].m_Curve.Array.data[0].value
+      value: 0.39999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
+      propertyPath: SunDirLightIntensityCurve.Array.data[0].m_Curve.Array.data[1].time
+      value: 23.90192
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
+      propertyPath: SunDirLightIntensityCurve.Array.data[0].m_Curve.Array.data[1].value
+      value: 0.39999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
+      propertyPath: SunDirLightIntensityCurve.Array.data[0].m_Curve.Array.data[2].time
+      value: 23.90192
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
+      propertyPath: SunDirLightIntensityCurve.Array.data[0].m_Curve.Array.data[3].time
+      value: 23.90192
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
+      propertyPath: SunDirLightIntensityCurve.Array.data[0].m_Curve.Array.data[3].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
+      propertyPath: SunDirLightIntensityCurve.Array.data[0].m_Curve.Array.data[4].time
+      value: 23.90192
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}
+      propertyPath: SunDirLightIntensityCurve.Array.data[0].m_Curve.Array.data[2].value
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 2}

@@ -8,28 +8,59 @@ public class Eraser : Photon.MonoBehaviour
     public float eraseDelay;
     private float countdown;
     private bool erased;
+    private Color baseColor;
+    private Color color = new Color();
+    private MeshRenderer eraserRenderer;
+
+    void Awake()
+    {
+        eraserRenderer = gameObject.GetComponent<MeshRenderer>();
+        baseColor = eraserRenderer.material.color;
+        //Debug.Log("awaken eraser");
+    }
 
     void OnTriggerEnter(Collider collisionInfo)
     {
-        countdown = eraseDelay;
         erased = false;
         Debug.Log("i touched an eraser and i liked it");
+
+        if (collisionInfo.gameObject.transform.parent.name == "index")
+        {
+            countdown = eraseDelay;
+            color = baseColor;
+        }
     }
 
     void OnTriggerStay(Collider collisionInfo)
     {
-        if (countdown <= 0 && !erased)
+        if (!erased && collisionInfo.gameObject.transform.parent.name == "index")
         {
-            Debug.Log("erasing now");
-            lines = GameObject.FindGameObjectsWithTag("Line");
-            foreach (GameObject line in lines)
+            color.a += 0.02f;
+            color.r += 0.01f;
+            eraserRenderer.material.color = color;
+
+            if (countdown <= 0)
             {
-                Destroy(line);
+                Debug.Log("erasing now");
+                lines = GameObject.FindGameObjectsWithTag("Line");
+                foreach (GameObject line in lines)
+                {
+                    Destroy(line);
+                }
+                photonView.RPC("EraseRemoteLines", PhotonTargets.OthersBuffered);
+                erased = true;
             }
-            photonView.RPC("EraseRemoteLines", PhotonTargets.OthersBuffered);
-            erased = true;
+            countdown -= Time.deltaTime;
         }
-        countdown -= Time.deltaTime;
+    }
+
+    void OnTriggerExit(Collider collisionInfo)
+    {
+        if (collisionInfo.gameObject.transform.parent.name == "index")
+        {
+            //Debug.Log("index exiting eraser");
+            eraserRenderer.material.color = baseColor;
+        }
     }
 
     [PunRPC]
